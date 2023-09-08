@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&family=Pompiere&display=swap');
-@import url('https://unpkg.com/css.gg@2.0.0/icons/css/mail.css');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@500&family=Plus+Jakarta+Sans&family=Pompiere&family=Yusei+Magic&display=swap');
 
 * 
 {
     margin: 0;
     padding: 0;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Montserrat', sans-serif;
     font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: 'Pompiere', cursive;
+    font-family: 'Yusei Magic', sans-serif;
     text-decoration: none;
-    /* color: #fff; */
 }
 
 html,
@@ -30,27 +32,6 @@ body {
     color: white;
     background: linear-gradient(90deg, rgba(202, 228, 253, 0.849) 36%, #7db8ff 100%);
     box-shadow: 0px 2px 5px rgba(88, 116, 157, 0.15);
-    transition: 0.3s;
-    -webkit-animation: navbar 22s ease infinite;
-    -moz-animation: navbar 22s ease infinite;
-    animation: navbar 22s ease infinite;
-    z-index: 1000;
-}
-
-@-webkit-keyframes navbar {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes navbar {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes navbar {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
 }
 
 .navbar ul {
@@ -66,14 +47,13 @@ body {
 }
 
 .navbar li a{
-    height: 100%;
+    /* height: 100%; */
     position: relative;
     padding: 25px 62px;
     display: flex;
     letter-spacing: 2px;
     justify-content: center;
     align-items: center;
-    transition: all .26s ease;
 }
 
 a {
@@ -87,9 +67,8 @@ a:hover{
 }
 .navbar a {
     text-decoration: none;
-    letter-spacing: .05em;
     transition: all .26s ease;
-    display: inline-block;
+    /* display: inline-block; */
     line-height: 1;
     z-index: 100;
 }
@@ -97,10 +76,10 @@ a:hover{
 .navbar a:hover {
     background-color: rgba(245, 245, 245, 0.507);
     color: #ed0488;
-    width: 50%;
     height: 0;
-    padding-left: .1px;
+    padding-left: 6.1px;
     border-left: solid 4px #ed0488;
+    border-radius: 0 10px 10px 0;
     z-index: 5;
 }
 
@@ -130,5 +109,6 @@ a:hover{
  height: 38.7px;
  transform: rotate(-45deg);
  bottom: 3px;
- left: 0
-} 
+ left: 0;
+}
+
