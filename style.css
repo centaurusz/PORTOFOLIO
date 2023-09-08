@@ -7,7 +7,7 @@
     padding: 0;
     font-family: 'Plus Jakarta Sans', sans-serif;
     text-decoration: none;
-    color: #fff;
+    /* color: #fff; */
 }
 
 html,
@@ -27,8 +27,30 @@ body {
     margin: 0 0 0 50px;
     font-size: 14px;
     line-height: 1.5rem;
-    background: linear-gradient(90deg, rgba(213,233,253,0.75043630017452) 36%, rgba(159,201,252,1) 100%);
+    color: white;
+    background: linear-gradient(90deg, rgba(202, 228, 253, 0.849) 36%, #7db8ff 100%);
     box-shadow: 0px 2px 5px rgba(88, 116, 157, 0.15);
+    transition: 0.3s;
+    -webkit-animation: navbar 22s ease infinite;
+    -moz-animation: navbar 22s ease infinite;
+    animation: navbar 22s ease infinite;
+    z-index: 1000;
+}
+
+@-webkit-keyframes navbar {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes navbar {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes navbar {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 
 .navbar ul {
@@ -51,14 +73,37 @@ body {
     letter-spacing: 2px;
     justify-content: center;
     align-items: center;
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
+    transition: all .26s ease;
 }
 
 a {
+    display: block;
     text-decoration: none;
-    color: #fff;
+    color: white;
 }
+
+a:hover{
+    color: #ed0488;
+}
+.navbar a {
+    text-decoration: none;
+    letter-spacing: .05em;
+    transition: all .26s ease;
+    display: inline-block;
+    line-height: 1;
+    z-index: 100;
+}
+
+.navbar a:hover {
+    background-color: rgba(245, 245, 245, 0.507);
+    color: #ed0488;
+    width: 50%;
+    height: 0;
+    padding-left: .1px;
+    border-left: solid 4px #ed0488;
+    z-index: 5;
+}
+
 .gg-mail,
 .gg-mail::after {
  display: block;
@@ -71,11 +116,10 @@ a {
  overflow: hidden;
  transform: scale(var(--ggs,1));
  position: relative;
- top: 24px;
  left: 56px;
  width: 38px;
  height: 23px;
- border-radius: 2px
+ border-radius: 2px;
 }
 
 .gg-mail::after {
