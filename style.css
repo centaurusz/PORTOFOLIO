@@ -1,22 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@500&family=Plus+Jakarta+Sans&family=Pompiere&family=Yusei+Magic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat:wght@500&family=Plus+Jakarta+Sans&display=swap');
 
 * 
 {
     margin: 0;
     padding: 0;
-    font-family: 'Comfortaa', cursive;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-family: 'Pompiere', cursive;
-    font-family: 'Yusei Magic', sans-serif;
-    text-decoration: none;
 }
 
 html,
 body {
     width: 100%;
     background: white;
-    height: 2560px;
+    height: 1440px;
+    font-family: 'Plus Jakarta Sans' 'montserrat' 'Josefin Sans', sans-serif;
 }
 
 .navbar {
@@ -25,12 +20,14 @@ body {
     max-width: 100%;
     position: fixed;
     top: 25px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     border-radius: 33px;
     margin: 0 0 0 50px;
     font-size: 14px;
     line-height: 1.5rem;
     color: white;
-    background: linear-gradient(90deg, rgba(202, 228, 253, 0.849) 36%, #7db8ff 100%);
+    background: rgb(202,228,253);
+    background: linear-gradient(90deg, rgba(202,228,253,1) 36%, rgba(125,184,255,1) 100%);
     box-shadow: 0px 2px 5px rgba(88, 116, 157, 0.15);
 }
 
@@ -112,3 +109,38 @@ a:hover{
  left: 0;
 }
 
+#home {
+    /* width: 100%; */
+    max-width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.section{
+    margin: auto;
+    max-width: 1000px;
+    position: relative;
+    display: flex;
+}
+
+.text-title {
+    font-size: 4em;
+    position: relative;
+    letter-spacing: 6px;
+    font-family: 'Josefin Sans', sans-serif;
+    top: 14rem;
+    left: 3em;
+    justify-content: center;
+    text-align: center;
+}
+
+.text-title span {
+    font-size: 32px;
+    line-height: 2;
+}
+
+.text-title p{
+     font-size: 16px;
+     letter-spacing: 2px;
+     line-height: 1.5;
+}
